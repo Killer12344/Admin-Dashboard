@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+:root{
+   --light : #e5e5e5;
+   --dark : #2d3b43;
+   --primay : #7b8cde;
+   --soft-dark : #5e6a706e;
+}
+
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+}
+
+.bg-color{
+   background-color: var(--light);
+}
+
+.sidebar{
+   background-color: var(--dark);
+   height: 100%;
+   position: relative;
+}
+
+.content{
+   height: 100vh;
+   overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar{
+	width: 5px;
+}
+
+.card::-webkit-scrollbar-track{
+   background-color: black;
+}
+
+.content::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+   background-color: var(--soft-dark);
+   height: 20px !important;
+}
+
+.content::-webkit-scrollbar-track-piece{
+   background-color: var(--light);
+}
+
+.header{
+   position: sticky;
+   top: 0px;
+   z-index: 1000;
+}
+
+.menu-header{
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px;
+   width: 100%;
+}
+
+.nav-menu-item {
+   padding: 0px;
+   margin: 0px;
+}
+
+.nav-menu-item li{
+   list-style: none;
+   display: inline;
+}
+
+.nav-menu-link{
+   text-decoration: none;
+   padding: 5px 10px;
+}
+
+.form-search{
+   width: 350px;
+   display: flex;
+   align-items: center;
+   padding: 2px 10px;
+   border-radius: 10px;
+   border: 1px solid var(--soft-dark);
+}
+
+.form-search input{
+   border: 0px;
+   width: 100%;
+} 
+
+.form-search input:focus{
+   border: 0px;
+   box-shadow: none !important;
+}
+
+
+.profile-btn:focus{
+   box-shadow: none !important;
+}
+
+.icon-border{
+   background-color: var(--primay);
+   padding: 20px;
+   border-radius: 20px;
+}
+
+.border-round{
+   border-radius: 20px;
+}
+
+.card{
+   border-radius: 20px;
+}
+
+.nav-item{
+   margin: 3px 10px;
+}
+
+.active{
+   background-color: var(--soft-dark);
+   border-radius: 10px;
+}
+
+.nav-item:hover{
+   background-color: var(--soft-dark);
+   border-radius: 10px;
+}
+
+.icon-menu-border{
+   background-color: var(--primay);
+   padding: 5px;
+   border-radius: 50px;
+   margin-right: 5px;
+}
+
+@media screen and (max-width : 576px) {
+    
+   .form-search{
+      width: auto;
+   }
+
+   .sidebar{
+      width: 200px;
+      position: absolute;
+      z-index: 1001;
+      left: -70%;
+   }
+}
+
+@media screen and (max-width : 768px) {
+
+   .myChart {
+      height : 150px !important;
+   }
+
+}
+
+@media screen and (max-width : 830px) {
+
+   .myChart {
+      height : 170px !important;
+   }
+
+}
